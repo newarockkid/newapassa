@@ -1,3 +1,99 @@
 html, body {
-  margin: 20px;
+    height: 100%;
+}
+html {
+    overflow-y: scroll;
+}
+body {
+    font-family: 'Georgia', trebuchet ms, arial, sans-serif;
+    font-size: 16px;
+    color: #555;
+    background-color: #FEFEFE;
+}
+/* TOP LOGO RELATED CSS CLASSES */
+
+.my-logo {
+    font: 1.8em"Fredericka the Great", "serif";
+    color: #FFF;
+    background-color: #EB8540;
+    border-radius: 0px 0px 6px 6px;
+}
+.my-logo > div {
+    text-align: center;
+    float: left;
+}
+.my-logo div.d {
+    width: 40%;
+    background-color: #74A6BD;
+    border-radius: 0px 0px 6px 6px;
+    height: 300px;
+    line-height: 300px;
+}
+.my-logo div.g {
+    width: 25%;
+    background-color: #E9B64D;
+    border-radius: 0px 0px 6px 6px;
+    height: 80px;
+    line-height: 80px;
+}
+.my-logo div.s {
+    width: 35%;
+    background-color: #90CA77;
+    border-radius: 0px 0px 6px 6px;
+    height: 120px;
+    line-height: 120px;
+}
+/* NAVIGATION BAR RELATED CLASSES */
+
+.nav-bar {
+    padding: 30px 0px 20px 0px;
+}
+.nav-bar div.horizontal-bar {
+    padding: 10px 0px;
+    border-bottom: 5px solid #AB988B;
+}
+.nav > li {
+    float: left;
+    list-style-type: none;
+}
+.nav > li > a {
+    text-decoration: none;
+    color: #7195A3;
+    line-height: 39px;
+    height: 34px;
+    cursor: pointer;
+    font: 13px/1.1em'Signika', 'sans-serif';
+    padding-right: 20px;
+}
+.nav > li > a:hover, .nav > li > a:focus, .nav > li > a.active {
+    color: #AB988B;
+}
+/* COMMON CSS CLASSES */
+
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+/* LOAD WEB FONTS */
+
+@font-face {
+    font-family: "Fredericka the Great";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Fredericka the Great"), local("FrederickatheGreat"), url("http://themes.googleusercontent.com/static/fonts/frederickathegreat/v2/7Es8Lxoku-e5eOZWpxw18vc3vBAn7YvtW9hNjxWZBR0.woff") format("woff");
+}
+@font-face {
+    font-family: "Signika";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Signika"), local("Signika-Regular"), url("http://themes.googleusercontent.com/static/fonts/signika/v3/_M5k9_BZTkfaM2dnN0vNGw.woff") format("woff");
 }
