@@ -1,4 +1,15 @@
-<h3 class="grey-dotted-border-bottom">Projects</h3>
-{{#each view.projects}}
-	{{show-project project=this}}	
-{{/each}}
+<div class="clearfix">
+    <div class="float-left col-2">
+        <h1>Projects</h1>
+        <ul class="project-list plain-list">
+            {{#each view.projects}}
+            <li {{bind-attr project-id=id}} {{action 'selectProject' this target='view'}}>{{name}}</li>
+            {{/each}}
+        </ul>
+    </div>
+    <div class="float-left col-8">
+        <div class="project">
+            {{show-project projectBinding='view.selectedProject'}}
+        </div>
+    </div>
+</div>

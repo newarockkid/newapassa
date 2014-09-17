@@ -91,7 +91,7 @@ h1 {
     margin-bottom: 0.4em;
     font: 1.2em"Fredericka the Great", "serif";
 }
-h3{
+h3 {
     color: #333;
     font-size: 1.20em;
     text-transform: uppercase;
@@ -99,7 +99,7 @@ h3{
     padding-bottom: 0.2em;
     margin-bottom: 0.4em;
 }
-h6{
+h6 {
     color: #333;
     font-size: 1em;
     text-transform: uppercase;
@@ -113,7 +113,7 @@ h6{
     border-radius: 5px;
     margin-bottom: 20px;
     margin: 2px;
-    padding:5px;
+    padding: 5px;
 }
 .well.green {
     border: 2px solid #ADBF73;
@@ -123,7 +123,10 @@ h6{
     border: 2px solid #DDD;
     background-color: #CCC;
 }
-
+.well.light-green {
+    border: 2px solid transparent;
+    background-color: #C8DB91;
+}
 .well div {
     line-height: 1.8em;
 }
@@ -152,8 +155,14 @@ h6{
 .grey-dotted-border-left {
     border-left: 1px dotted #FFF;
 }
-.grey-dotted-border-bottom{
-    border-bottom: 1px dashed #B2B2B2;    
+.grey-dotted-border-bottom {
+    border-bottom: 1px dashed #B2B2B2;
+}
+.white-dotted-border-bottom {
+    border-bottom: 1px dashed #F7F8F6;
+}
+.white-dotted-border-top {
+    border-top: 1px dashed #F7F8F6;
 }
 .space-right-sm {
     padding-right: 10px;
@@ -161,19 +170,28 @@ h6{
 .space-left-sm {
     padding-left: 10px;
 }
-a.plain{
+.space-bottom-sm {
+    padding-bottom: 10px;
+}
+.hide {
+    display: none;
+    visibility: false;
+}
+a.plain {
     text-decoration: none;
     color: inherit;
     border-bottom: 1px dotted #555;
 }
-.list{
-    list-style-type:disc;
+ul.list {
+    list-style-type: disc;
 }
-
-.list li{
-    padding-left:10px;
-    margin-left:20px;
+ul.list li {
+    padding-left: 10px;
+    margin-left: 20px;
     line-height: 1.4em;
+}
+.pointer-cursor {
+    cursor: pointer;
 }
 /* LOAD WEB FONTS */
 
@@ -188,4 +206,13 @@ a.plain{
     font-style: normal;
     font-weight: 400;
     src: local("Signika"), local("Signika-Regular"), url("http://themes.googleusercontent.com/static/fonts/signika/v3/_M5k9_BZTkfaM2dnN0vNGw.woff") format("woff");
+}
+ul.plain-list li {
+    display: block;
+    line-height: 30px;
+    cursor: pointer;
+    padding-left: 14px;
+}
+ul.plain-list li:hover, ul.plain-list li.active {
+    font-weight: bold;
 }

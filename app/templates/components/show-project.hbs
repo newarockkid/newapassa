@@ -1,8 +1,23 @@
-<div class="well grey" {{action 'toggleExpand' target="view"}}>{{name}}</div>
-<div class="project-details">
-	<ul>
-		{{#each responsibilities}}
-			<li>{{this}}</li>
-		{{/each}}
-	</ul>
+<div class="well grey">
+    <div class="pointer-cursor clearfix" {{action 'toggleExpand'}}>
+    	<div class="float-left">:: {{project.displayName}}</div>
+    	<div class="float-right">
+    		{{#if expanded}}
+    			<img src="https://cdn1.iconfinder.com/data/icons/splashyIcons/arrow_state_grey_expanded.png" />
+    		{{/if}}
+    		
+    	</div>
+    </div>
+    <div class="project-details white-dotted-border-top space-left-sm ">
+        <br />
+        <h6 class="grey-dotted-border-bottom">Responsibilities</h6>
+        <ul class="list">
+            {{#each project.responsibilities}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <br />
+        <h6 class="grey-dotted-border-bottom">Languages/Tools used</h6>
+        <p>{{languages}}</p>
+    </div>
 </div>
