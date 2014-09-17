@@ -83,6 +83,98 @@ body {
 .clearfix:after {
     clear: both;
 }
+h1 {
+    color: #333;
+    text-transform: uppercase;
+    line-height: 1.1em;
+    padding-bottom: 0.2em;
+    margin-bottom: 0.4em;
+    font: 1.2em"Fredericka the Great", "serif";
+}
+h3{
+    color: #333;
+    font-size: 1.20em;
+    text-transform: uppercase;
+    line-height: 1.1em;
+    padding-bottom: 0.2em;
+    margin-bottom: 0.4em;
+}
+h6{
+    color: #333;
+    font-size: 1em;
+    text-transform: uppercase;
+    line-height: 1.1em;
+    padding-bottom: 0.2em;
+    margin-bottom: 0.4em;
+}
+.well {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin: 2px;
+    padding:5px;
+}
+.well.green {
+    border: 2px solid #ADBF73;
+    background-color: #ADCF73;
+}
+.well.grey {
+    border: 2px solid #DDD;
+    background-color: #CCC;
+}
+
+.well div {
+    line-height: 1.8em;
+}
+.row {
+    display: block;
+    width: 100%;
+}
+.col-1 {
+    width: 10%;
+}
+.col-2 {
+    width: 20%;
+}
+.col-3 {
+    width: 30%;
+}
+.col-6 {
+    width: 60%;
+}
+.col-7 {
+    width: 70%;
+}
+.col-8 {
+    width: 80%;
+}
+.grey-dotted-border-left {
+    border-left: 1px dotted #FFF;
+}
+.grey-dotted-border-bottom{
+    border-bottom: 1px dashed #B2B2B2;    
+}
+.space-right-sm {
+    padding-right: 10px;
+}
+.space-left-sm {
+    padding-left: 10px;
+}
+a.plain{
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 1px dotted #555;
+}
+.list{
+    list-style-type:disc;
+}
+
+.list li{
+    padding-left:10px;
+    margin-left:20px;
+    line-height: 1.4em;
+}
 /* LOAD WEB FONTS */
 
 @font-face {

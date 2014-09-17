@@ -49,3 +49,8 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
+##NOTES TO MYSELF
+* TO UPDATE TO LATEST EMBER DATA USE :
+	SOURCE : http://stackoverflow.com/questions/25869180/how-to-update-ember-cli-app-to-ember-data-1-0-0-beta9
+	npm uninstall ember-cli-ember-data --save-dev
+	npm install ember-data --save-dev

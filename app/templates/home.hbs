@@ -1,0 +1,21 @@
+<h1 class="grey-dotted-border-bottom">PROFESSIONAL EXPERIENCE</h1>
+{{#each companies}}
+	<div class="well green">
+	    <div class="clearfix">
+	        <div class="float-left col-3">
+	            <div>Software Engineer(08/2013 - continuing)</div>
+	            <div><a href="{{unbound website}}" target="_blank" class="plain">{{name}}</a></div>
+	            <div>{{address_1}} {{address_2}} </div>
+	            <div>{{city}}, {{state}} {{zip}}</div>
+	            <div>{{country}}</div>
+	        </div>
+	        <div class="float-left col-7">
+	            <div class="grey-dotted-border-left space-left-sm">
+	                <p>{{description}}</p>
+	            </div>
+	        </div>
+	    </div>		
+	</div>
+	<br />
+	{{view "show-projects" company=this}}	
+{{/each}}

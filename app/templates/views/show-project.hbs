@@ -1,0 +1,8 @@
+<div class="well grey" {{action 'toggleExpand' target="view"}}>{{project.name}}</div>
+<div class="project-details">
+	<ul>
+		{{#each project.responsibilities}}
+			<li>{{this}}</li>
+		{{/each}}
+	</ul>
+</div>
