@@ -9,7 +9,7 @@ default Ember.Component.extend({
      * @property 'expanded'
      * @type {boolean}
      */
-    expanded: true,
+    expanded: false,
 
     languages: null,
 
@@ -17,35 +17,5 @@ default Ember.Component.extend({
 
     didInsertElement: function() {
         this.set('languages', this.get('project.languages').toArray().join(", "));
-    },
-
-    actions: {
-
-        /**
-         * Toggles property expanded
-         *
-         * @action 'toggleExpand'
-         */
-        toggleExpand: function() {
-
-            var self = this;
-            if (this.get('expanded')) {
-                Ember.$(this.get('element')).find(".project-details").slideUp({
-                    duration: 400,
-                    complete: function() {
-                        self.toggleProperty('expanded');
-                    }
-                });
-            } else {
-                Ember.$(this.get('element')).find(".project-details").slideDown({
-                    duration: 400,
-                    complete: function() {
-                        self.toggleProperty('expanded');
-                    }
-                });
-            }
-
-        }
-
     }
 });

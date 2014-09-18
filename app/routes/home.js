@@ -13,8 +13,7 @@ default Ember.Route.extend({
     },
 
     setupController: function(controller, model) {
-    	controller.set('companies', this.get('store').all('company'));
-        this._super(controller, model);
+    	this._super(controller, model);
     }
 
 });

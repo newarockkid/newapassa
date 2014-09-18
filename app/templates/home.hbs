@@ -1,21 +1,79 @@
+<h1 class="grey-dotted-border-bottom">Overview</h1>
+<p>Timeline version of some important events/dates pertaining to my educational and professional journey.</p>
+{{!--timeline-overview experiences=model--}}
+<br />
 <h1 class="grey-dotted-border-bottom">PROFESSIONAL EXPERIENCE</h1>
-{{#each companies}}
+{{#each}}
 	<div class="well green">
 	    <div class="clearfix">
-	        <div class="float-left col-3">
-	            <div>Software Engineer(08/2013 - continuing)</div>
-	            <div><a href="{{unbound website}}" target="_blank" class="plain">{{name}}</a></div>
-	            <div>{{address_1}} {{address_2}} </div>
-	            <div>{{city}}, {{state}} {{zip}}</div>
-	            <div>{{country}}</div>
+	        <div class="float-left col-4">
+	            <div>Software Engineer({{formatted-date startDate "L"}} - {{#if endDate}}{{formatted-date endDate "L"}}{{else}}continuing{{/if}})</div>
+	            <div><a href="{{unbound website}}" target="_blank" class="plain">{{company.name}}</a></div>
+	            <div>{{company.address_1}} {{company.address_2}} </div>
+	            <div>{{company.city}}, {{company.state}} {{company.zip}}</div>
+	            <div>{{company.country}}</div>
 	        </div>
-	        <div class="float-left col-7">
+	        <div class="float-left col-6">
 	            <div class="grey-dotted-border-left space-left-sm">
-	                <p>{{description}}</p>
+	                <p>{{company.description}}</p>
 	            </div>
 	        </div>
 	    </div>	    			
 	</div>
 	<br />	
-	{{view "show-projects" company=this}}
+	{{view "show-projects" experienceBinding="this"}}
 {{/each}}
+<br />
+<h1 class="grey-dotted-border-bottom">EDUCATION</h1>
+<ul class="list">
+    <li>Master of Science in Computer Science - Maharishi University of Management - Iowa, Fairfield 52557 </li>
+    <li>Bachelors of Engineering in Information Technology - Pokhara University - Pokhara, Nepal </li>
+</ul>
+<br />
+<h1 class="grey-dotted-border-bottom">REFERENCES</h1>
+<div class="clearfix margin-bottom-md">
+	<div class="float-left space-right-xsm">1.</div>
+	<div class="float-left">
+		<p>Ken Ortiz</p>
+	    <p>Software Development Manager</p>
+	    <p>National Oceanic And Atmospheric Administration (NOAA)</p>
+	    <p>Work: (978) 281-8796</p>
+	    <p>Home: (978) 335-6768</p>
+	    <p>Email: <a href="mailto:Ken.Ortiz@noaa.gov" class="plain">Ken.Ortiz@noaa.gov</a></p>
+	</div>
+</div>
+
+<div class="clearfix margin-bottom-md">
+	<div class="float-left space-right-xsm">2.</div>
+	<div class="float-left">
+		<p>Ayhan Ergul</p>
+	    <p>VP of Software Engineering</p>
+	    <p>Innovate! Inc.</p>
+	    <p>Work: (703) 879-4800</p>
+	    <p>Home: (781) 985-6920</p>
+	    <p>Email: <a href="mailto:aergul@innovateteam.com" class="plain">aergul@innovateteam.com</a></p>
+	</div>
+</div>
+
+<div class="clearfix margin-bottom-md">
+	<div class="float-left space-right-xsm">3.</div>
+	<div class="float-left">
+		<p>Prof. Keith Levi</p>
+	    <p>Chairman and Associate Professor of Computer Science</p>
+	    <p>Maharishi University Of Management</p>
+	    <p>Work: (641) 470-1363</p>
+	    <p>Home: (641) 472-4416</p>
+	    <p>Email: <a href="mailto:klevi@mum.edu" class="plain">klevi@mum.edu</a></p>
+	</div>
+</div>
+
+<div class="clearfix margin-bottom-md">
+	<div class="float-left space-right-xsm">4.</div>
+	<div class="float-left">
+		<p>Yajurendra Shrestha</p>
+	    <p>Chief Executive Officer</p>
+	    <p>SPI Nepal</p>
+	    <p>Work: +977-1-5551691</p>
+	    <p>Email: <a href="mailto:yaju@wlinktech.com" class="plain">yaju@wlinktech.com</a></p>
+	</div>
+</div>

@@ -11,7 +11,7 @@ default Ember.View.extend({
     selectedProject: null,
 
     initialize: function() {
-        var projects = (this.get('controller.model').findBy('company', this.get('company'))).get('projects');
+        var projects = this.get('experience.projects');
         if (projects) {
             this.set('projects', projects);
             this.set('selectedProject', projects.objectAt(0));

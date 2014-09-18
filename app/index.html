@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Deewendra G. Shrestha</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    {{BASE_TAG}}
-
-    <link rel="stylesheet" href="assets/reset.css">
-    <link rel="stylesheet" href="assets/vendor.css">
-    <link rel="stylesheet" href="assets/newapassa.css">
-  </head>
-  <body>
-    <script>
-      window.NewapassaENV = {{ENV}};
-      window.EmberENV = window.NewapassaENV.EmberENV;
-    </script>
-    <script src="assets/vendor.js"></script>
-    <script src="assets/newapassa.js"></script>
-    <script>
-      window.Newapassa = require('newapassa/app')['default'].create(NewapassaENV.APP);
-    </script>
-  </body>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Deewendra G. Shrestha</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {{BASE_TAG}}
+        <link rel="stylesheet" href="assets/reset.css">
+        <link rel="stylesheet" href="assets/vendor.css">
+        <link rel="stylesheet" href="assets/newapassa.css">
+    </head>
+    <body>
+      <script>
+          window.NewapassaENV = {{ENV}};
+          window.EmberENV = window.NewapassaENV.EmberENV;
+      </script>
+      <script src="assets/vendor.js"></script>
+      <script src="assets/newapassa.js"></script>
+      <script>
+          window.Newapassa = require('newapassa/app')['default'].create(NewapassaENV.APP);            
+      </script>
+    </body>
 </html>
