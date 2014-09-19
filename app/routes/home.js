@@ -7,13 +7,14 @@ default Ember.Route.extend({
         return this.get('store').find('experience');
     },
 
-    afterModel: function(){
-    	//load all companies to the store
-    	return this.get('store').find('company');
+    afterModel: function() {
+        //load all companies to the store
+        return this.get('store').find('company');
     },
 
     setupController: function(controller, model) {
-    	this._super(controller, model);
+        controller.set('companies', this.get('store').all('company'));
+        this._super(controller, model);
     }
 
 });
