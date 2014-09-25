@@ -51,6 +51,10 @@ Specify what it takes to deploy your app.
 
 ##NOTES TO MYSELF
 * TO UPDATE TO LATEST EMBER DATA USE :
+	
 	SOURCE : http://stackoverflow.com/questions/25869180/how-to-update-ember-cli-app-to-ember-data-1-0-0-beta9
+
 	npm uninstall ember-cli-ember-data --save-dev
+
 	npm install ember-data --save-dev
+	
