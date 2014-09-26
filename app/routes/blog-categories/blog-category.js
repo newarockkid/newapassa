@@ -8,7 +8,7 @@ default Ember.Route.extend({
         return categories.findBy('id', params.category_id);
     },
 
-    afterModel: function(model) {
+    afterModel: function() {
         this.transitionTo('blog-categories.blog-category.blogs');
     }
 

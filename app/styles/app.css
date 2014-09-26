@@ -15,7 +15,7 @@ p {
 }
 #container {
     margin: 0px auto;
-    width: 1000px;
+    width: 95%;
 }
 /* TOP LOGO RELATED CSS CLASSES */
 
@@ -183,6 +183,9 @@ h6 {
 .space-left-sm {
     padding-left: 10px;
 }
+.space-left-md {
+    padding-left: 15px;
+}
 .space-bottom-sm {
     padding-bottom: 10px;
 }
@@ -228,6 +231,10 @@ ul.list li {
     transform: scaleY(-1);
     filter: FlipV;
     -ms-filter: "FlipV";
+}
+.fixed {
+    position: fixed;
+    top: 0px;
 }
 /* CLASSS FOR DATE PANEL */
 
@@ -286,6 +293,22 @@ ul.list li {
     border: 2px solid #9CB770;
     padding: 4px;
     margin: 5px 0px;
+}
+/*CLASSES FOR GALLERY*/
+
+.gallery .gallery-thumbs img {
+    margin: 5px;
+}
+ul.gallery-albums li {
+    display: block;
+    cursor: pointer;
+    padding: 15px 0px 15px 25px;
+}
+ul.gallery-albums li:hover {
+    background-color: #CCC;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
 }
 /* LOAD WEB FONTS */
 

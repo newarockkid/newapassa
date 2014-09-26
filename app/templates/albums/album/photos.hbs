@@ -1,0 +1,6 @@
+<div class="gallery-thumbs">
+    {{#each}}
+    <img src="http://jgallery.jakubkowalczyk.pl/images/thumbs/{{unbound source}}" {{action "viewPhoto" this}}/>
+    {{/each}}
+</div>
+{{outlet}}
