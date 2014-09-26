@@ -5,7 +5,7 @@ default Ember.Route.extend({
 
     beforeModel: function() {
         var albums = this.modelFor('albums');
-        this.transitionTo('albums.album.photos', albums.objectAt(0));
+        this.transitionTo('album', albums.objectAt(0));
     }
 
 });

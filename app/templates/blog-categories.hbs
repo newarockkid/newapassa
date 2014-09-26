@@ -3,7 +3,7 @@
         <h1 class="grey-dotted-border-bottom">Categories</h1>
         <ul class="plain-list">
             {{#each}}
-            {{#link-to 'blog-categories.blog-category' this tagName="li"}}{{name}} <div class="float-right">{{blogsCount}}</div>{{/link-to}}
+            {{#link-to 'blog-category' this tagName="li"}}{{name}} <div class="float-right">{{blogsCount}}</div>{{/link-to}}
             {{/each}}
         </ul>
     </div>

@@ -4,7 +4,7 @@ export
 default Ember.Route.extend({
 
     model: function() {
-        var album = this.modelFor('albums.album');
+        var album = this.modelFor('album');
         return this.get('store').find('album-photo', {
             'album': album.get('id')
         });

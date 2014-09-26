@@ -6,7 +6,7 @@ default Ember.ArrayController.extend({
     actions: {
 
         selectAlbum: function(album) {
-            this.transitionToRoute('albums.album.photos', album);
+            this.transitionToRoute('album', album);
         }
 
     }

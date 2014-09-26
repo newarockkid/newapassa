@@ -7,21 +7,21 @@ var Router = Ember.Router.extend({
 Router.map(function() {
     this.resource('home');
     this.resource('albums', function() {
-        this.route('album', {
+        this.resource('album', {
             path: ':album_id'
         }, function() {
-            this.route('photos', function() {
-                this.route('photo', {
+            this.resource('photos', function() {
+                this.resource('photo', {
                     path: ':photo_id'
                 });
             });
         });
     });
     this.resource('blog-categories', function() {
-        this.route('blog-category', {
+        this.resource('blog-category', {
             path: ':category_id'
         }, function() {
-            this.route('blogs');
+            this.resource('blogs');
         });
     });
     this.resource('contact');
